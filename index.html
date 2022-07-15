@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Мое портфолио">
+    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <aside class="sidepanel">
+        <h3 class="sidepanel__title">Социальные сети</h3>
+        <div class="sidepanel__line">
+            <div class="sidepanel__line-inner"></div>
+        </div>
+        <a href="#" class="sidepanel__link">
+            <img class="facebook" src="icons/social/facebook.svg" alt="facebook__icon">
+        </a>
+        <a href="#" class="sidepanel__link">
+            <img class="instagram" src="icons/social/instagram.svg" alt="instagram__icon">
+        </a>
+        <a href="#" class="sidepanel__link">
+            <img class="github" src="icons/social/github.svg" alt="github__icon">
+        </a>
+    </aside>
+
+    <div class="humburger">
+        <span class="top_line"></span>
+        <span class="long_line"></span>
+        <span class="bottom_line"></span>
+    </div>
+
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close">
+                <img src="icons/close/Close.svg" alt="close_humburger-menu">
+            </div>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skill">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <div class="menu__social">
+                <a href="#" class="menu__social-link">
+                    <img class="facebook" src="icons/social/facebook.svg" alt="facebook__icon">
+                </a>
+                <a href="#" class="menu__social-link">
+                    <img class="instagram" src="icons/social/instagram.svg" alt="instagram__icon">
+                </a>
+                <a href="#" class="menu__social-link">
+                    <img class="github" src="icons/social/github.svg" alt="github__icon">
+                </a>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo__wrapper">
+                <div id="hello_my-name" class="promo__title title">Привет, меня зовут Тима</div>
+                <h1 class="promo__header title">Я web-разработчик из города Бишкек</h1>
+                <div class="promo__btns">
+                    <a href="#" class="promo__link btn">Портфолио</a>
+                    <a href="#" class="promo__link btn_second">Про меня</a>
+                </div>
+            </div>
+            <div class="orbit">
+                <div class="planet"></div>
+                <div class="star"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <!-- <img class="my-photo" src="img/main-photo.jpg" alt="photo"> -->
+                <picture> 
+                    <source media="(max-width: 768px)" srcset="img/IMG.jpg">
+                    <img class="my-photo" src="img/main-photo.jpg" alt="photo">
+                </picture>
+                <div class="about__info">
+                    <div class="about__title title">Обо мне</div>
+                    <h2 class="title">Меня зовут Тима</h2>
+                    <div class="line"></div>
+                    <p class="about__descr">Пока учусь еще. <br> 
+                    Почему у меня такое недовольное лицо? все просто, я почти всегда такой</p>
+                <div class="about__skills">
+                    <div class="about__skill">
+                        <div class="about__skill-circle">
+                            <img class="about__icon" src="icons/about_me/web_development.svg" alt="icon">
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="wrapper__skill">Web-разработка</h3>
+                            <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est nisi asperiores dolor reprehenderit maiores, quasi eum omnis tenetur a culpa voluptatum doloremque natus deleniti. Tenetur, rerum. Dolore, itaque adipisci?</p>
+                        </div>
+                    </div>
+                    <div class="about__skill">
+                        <div class="about__skill-circle">
+                            <img class="about__icon" src="icons/about_me/mobile_dev.svg" alt="icon">
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="wrapper__skill">Разработка приложений</h3>
+                            <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est nisi asperiores dolor reprehenderit maiores, quasi eum omnis tenetur a culpa voluptatum doloremque natus deleniti. Tenetur, rerum. Dolore, itaque adipisci?</p>
+                        </div>
+                    </div>
+                    <div class="about__skill">
+                        <div class="about__skill-circle">
+                            <img class="about__icon" src="icons/about_me/design.svg" alt="icon">
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="wrapper__skill">UI/UX Design</h3>
+                            <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est nisi asperiores dolor reprehenderit maiores, quasi eum omnis tenetur a culpa voluptatum doloremque natus deleniti. Tenetur, rerum. Dolore, itaque adipisci?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="resume__title title">Опыт</div>
+            <h2 class="resume__subtitle title">Чем я буду полезен</h2>
+            <div class="line"></div>
+
+            <div class="resume__wrapper">
+                <div class="resume__column">
+                    <h3 class="resume__column-title">Образование</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/university.svg" alt="university_icon">
+                                    </div>
+                                    <h4 class="title">КТЭК им. M.Т.Ибраимова</h4>
+                                    <div class="resume__item-location">Кара-балта</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt eligendi laboriosam labore porro quae ea beatae itaque voluptatum, saepe ducimus excepturi similique voluptate adipisci est fugit numquam voluptatem asperiores quibusdam.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="university_icon">
+                                    </div>
+                                    <h4 class="title">Udemy</h4>
+                                    <div class="resume__item-location">Курсы по Web-разработки</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt eligendi laboriosam labore porro quae ea beatae itaque voluptatum, saepe ducimus excepturi similique voluptate adipisci est fugit numquam voluptatem asperiores quibusdam.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume__column">
+                    <h3 class="resume__column-title">Опыт работы</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/developer.svg" alt="university_icon">
+                                    </div>
+                                    <h4 class="title">Пока просто учусь</h4>
+                                    <div class="resume__item-location">Udemy</div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt eligendi laboriosam labore porro quae ea beatae itaque voluptatum, saepe ducimus excepturi similique voluptate adipisci est fugit numquam voluptatem asperiores quibusdam.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill" class="skill">
+        <div class="container">
+            <div class="skill__title title">Навыки</div>
+            <h2 class="skill__subtitle title">Что я использую в работе</h2>
+            <div class="line"></div>
+            <div class="skill__wrapper">
+                <div class="skill__item">
+                    <div class="skill__icon">
+                        <img src="icons/skills/html5.svg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="skill__item-title">HTML5</h4>
+                        <p class="descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</p>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__icon">
+                        <img src="icons/skills/css3.svg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="skill__item-title">CSS3</h4>
+                        <p class="descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__icon">
+                        <img src="icons/skills/js.svg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="skill__item-title">Java Script</h4>
+                        <p class="descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</p>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__icon">
+                        <img src="icons/skills/jquery.svg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="skill__item-title">Jquery</h4>
+                         <p class="descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</p>
+                    </div>
+                </div>
+                <div class="skill__item">
+                    <div class="skill__icon">
+                        <img src="icons/skills/react.svg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="skill__item-title">React</h4>
+                        <p class="descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill__scale">
+                <div class="skill__scale-item">
+                    <div class="skill__scale-first">
+                        <div class="skill__scale-title">Создание сайтов</div>
+                        <div class="skill__scale-percent">100%</div>
+                    </div>
+                    <div class="skill__scale-second">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill__scale-item">
+                    <div class="skill__scale-first">
+                        <div class="skill__scale-title">Создание приложений</div>
+                        <div class="skill__scale-percent">85%</div>
+                    </div>
+                    <div class="skill__scale-second">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill__scale-item">
+                    <div class="skill__scale-first">
+                        <div class="skill__scale-title">Работа с данными</div>
+                        <div class="skill__scale-percent">90%</div>
+                    </div>
+                    <div class="skill__scale-second">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill__scale-item">
+                    <div class="skill__scale-first">
+                        <div class="skill__scale-title">Креативность</div>
+                        <div class="skill__scale-percent">75%</div>
+                    </div>
+                    <div class="skill__scale-second">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill__scale-item">
+                    <div class="skill__scale-first">
+                        <div class="skill__scale-title">Создание дизайна</div>
+                        <div class="skill__scale-percent">90%</div>
+                    </div>
+                    <div class="skill__scale-second">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill__scale-item">
+                    <div class="skill__scale-first">
+                        <div class="skill__scale-title">Soft skills</div>
+                        <div class="skill__scale-percent">10%</div>
+                    </div>
+                    <div class="skill__scale-second">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="portfolio__title title">Портфолио</div>
+            <h2 class="portfolio__subtitle title">Мои работы</h2>
+            <div class="line"></div>
+
+            <div class="portfolio__wrapper">
+                <a href="https://kotoshilla.github.io/Uber_page/" class="portfolio__item">
+                    <img src="img/works/uber.jpg" alt="uber">
+                    <div class="portfolio__item-back">
+                        <h3>Uber page</h3>
+                        <p>Просто страница</p>
+                    </div>
+                </a>
+                <a href="https://kotoshilla.github.io/HeartRateMonitor_page/" class="portfolio__item">
+                    <img src="img/works/pulse.jpg" alt="pulse">
+                    <div class="portfolio__item-back">
+                        <h3>Pusometer</h3>
+                        <p>Страница с пульсометрами</p>
+                    </div>
+                </a>
+                <a href="https://kotoshilla.github.io/Wordpress_page/" class="portfolio__item">
+                    <img src="img/works/main_bg.jpg" alt="wordpress">
+                    <div class="portfolio__item-back">
+                        <h3>Wordpress</h3>
+                        <p>Снова просто страница</p>
+                    </div>
+                </a>
+                <a href="https://kotoshilla.github.io/css-grid_test/" class="portfolio__item vertical">
+                    <img src="img/works/plans.jpg" alt="test">
+                    <div class="portfolio__item-back">
+                        <h3>css grid test</h3>
+                        <p>Просто тестировал CSS гриды</p>
+                    </div>
+                </a>
+                <a href="https://kotoshilla.github.io/Activebox_page/" class="portfolio__item">
+                    <img src="img/works/work-1.jpg" alt="Activebox">
+                    <div class="portfolio__item-back">
+                        <h3>Activebox</h3>
+                        <p>Страница которую еще не доделал, чуток совсем осталось, но так лень</p>
+                    </div>
+                </a>
+                <a href="https://kotoshilla.github.io/Vpn_page/" class="portfolio__item horizontal">
+                    <img src="img/works/Huge Global.svg" alt="vpn">
+                    <div class="portfolio__item-back">
+                        <h3>Vpn service page</h3>
+                        <p>Название говорит само за себя</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="price" class="price">
+        <div class="container">
+            <div class="price__title title">Прайс-лист</div>
+            <div class="line"></div>
+            <div class="price__wrapper">
+                <div class="price__wrapper-item">
+                    <div class="price__wrapper-first">
+                        <div class="price__wrapper-title">Landing-page</div>
+                        <div class="price__wrapper-price">от 0</div>
+                    </div>
+                    <div class="price__wrapper-second">
+                        <p>Одностраничный сайт для презентации услуг/товаров/...</p>
+                    </div>
+                </div>
+                <div class="price__wrapper-item">
+                    <div class="price__wrapper-first">
+                        <div class="price__wrapper-title">Корпоративный сайт</div>
+                        <div class="price__wrapper-price">от 0</div>
+                    </div>
+                    <div class="price__wrapper-second">
+                        <p>Сайт для вашего бизнеса или компании</p>
+                    </div>
+                </div>
+                <div class="price__wrapper-item">
+                    <div class="price__wrapper-first">
+                        <div class="price__wrapper-title">Интернет-магазин</div>
+                        <div class="price__wrapper-price">от 0</div>
+                    </div>
+                    <div class="price__wrapper-second">
+                        <p>Инструмент для ваших продаж в сети</p>
+                    </div>
+                </div>
+                <div class="price__wrapper-item">
+                    <div class="price__wrapper-first">
+                        <div class="price__wrapper-title">web-приложение</div>
+                        <div class="price__wrapper-price">от 0</div>
+                    </div>
+                    <div class="price__wrapper-second">
+                        <p>Приложение внутри браузера для вашего комфорта</p>
+                    </div>
+                </div>
+                <div class="price__wrapper-item">
+                    <div class="price__wrapper-first">
+                        <div class="price__wrapper-title">Android/IOS приложение</div>
+                        <div class="price__wrapper-price">от 0</div>
+                    </div>
+                    <div class="price__wrapper-second">
+                        <p>Приложение для сматрфона</p>
+                    </div>
+                </div>
+                <div class="price__wrapper-item">
+                    <div class="price__wrapper-first">
+                        <div class="price__wrapper-title">Дизайн</div>
+                        <div class="price__wrapper-price">Индивидуально</div>
+                    </div>
+                    <div class="price__wrapper-second">
+                        <p>Создам дизайн для вашего сайиа/приложения...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img  src="img/main-photo1.jpg" alt="photo">
+                </div>
+                <div class="contacts__descr">
+                    <div class="contacts__title title">Контакты</div>
+                    <h2 class="contacts__subtitle title">Свяжитесть со мной</h2>
+                    <div class="line"></div>
+                    <div class="contacts__text">Любым удобным для вас способом:</div>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social/telegram.svg" alt="telegram">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social/instagram.svg" alt="instagram">
+                        </a>
+                    </div>
+                    <div class="contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
+
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="textarea"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                       <div class="contacts__triggers">
+                            <button class="contacts__btn btn ">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) <a href="policy.html">с политикой конфиденциальности</a></span>
+                            </div>
+                       </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="message">
+        Добрейшего денёчка)
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

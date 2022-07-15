@@ -1,0 +1,74 @@
+.about {
+    min-height: 840px;
+    padding: 120px 0;
+    background: #fff;
+    z-index: 4;
+    &__wrapper {
+        display: flex;
+        img {
+            object-fit: cover;
+            height: 600px;
+            width: 400px;
+            margin-right: 70px;
+        }
+    }
+    &__title {
+        position: relative;
+        margin-left: 12px;
+        font-size: 16px;
+        line-height: 26px;
+        z-index: 5;
+        @include before_circle;
+    }
+    h2.title {
+        margin-top: 6px;
+        margin-bottom: 0;
+    }
+    &__descr {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    &__skills {
+        margin-top: 80px;
+        margin-left: 13px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 290px)); 
+	    grid-template-rows: repeat(2, minmax(120px, auto));
+	    grid-auto-rows: minmax(120px, auto);
+        gap: 20px 50px;
+    }
+    &__skill {
+        display: flex;
+        
+    }
+    &__skill-circle {
+        margin-top: 10px;
+        margin-right: 23px;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        z-index: 1;
+        @include before_circle;
+        img {
+            margin-top: 8px;
+            margin-left: 3px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .descr {
+        font-size: 12px;
+        transition: all .6s;
+        &:hover {
+            transform: scale(1.1);
+          
+        }
+    }
+    
+}
+.line {
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+    }

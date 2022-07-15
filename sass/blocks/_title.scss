@@ -1,0 +1,24 @@
+.title {
+    cursor: default;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    z-index: 3;
+}
+.promo__title {
+    cursor: default;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 3;
+    @include before_circle-animation;
+    
+}
+.promo__header {
+    position: relative;
+    cursor: default;
+    font-size: 48px;
+    width: 530px;
+    margin-top: 10px;
+    z-index: 3;
+}

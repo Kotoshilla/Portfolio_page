@@ -1,0 +1,36 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/btn';
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/about';
+@import 'blocks/skill';
+@import 'blocks/price';
+@import 'blocks/resume';
+@import 'blocks/contacts';
+@import 'blocks/sidepanel';
+@import 'blocks/humburger';
+@import 'blocks/portfolio';
+
+@import 'blocks/message';
+
+@import 'base/animation';
+
+@import 'blocks/media.scss';
+
+@import 'blocks/orbit';

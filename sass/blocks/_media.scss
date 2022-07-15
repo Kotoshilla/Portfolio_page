@@ -1,0 +1,428 @@
+@media (max-width: 1260px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+  
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            .my-photo {
+                width: 350px;
+                height: 550px;
+                margin-right: 40px;
+            }
+        }
+    .wrapper {
+        &__skill {
+            font-size: 17px;
+        }
+    }
+        &__skills {
+            margin-top: 53px;
+            margin-left: 0px;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(275px,275px));
+            grid-template-rows: repeat(2,minmax(120px,auto));
+            grid-auto-rows: minmax(120px,auto);
+            gap: 15px 15px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2,370px);
+            column-gap: 85px;
+        }
+    }
+    .skill {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit ,270px);
+            justify-content: center;
+            gap: 30px;
+
+        }
+        &__scale {
+            grid-template-columns: repeat(auto-fit ,270px);
+            justify-content: space-around;
+        }
+    
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px);
+            justify-content: center;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    
+    .contacts {
+        &__wrapper {
+            padding: 0 35px 0 52px; 
+            display: grid;
+            grid-template-columns: 350px 450px;
+            justify-content: space-around;
+            .contacts__photo {
+                img {
+                    object-fit: cover;
+                    width: 100%;        
+                    height: 100%;      
+                }
+            }
+        }
+        &__form {
+            grid-template: 45px 190px 45px/repeat(2,200px);
+            gap: 40px;
+        }
+        &__btn {
+            padding: 0 15px;
+        }
+        
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .orbit {
+        opacity: .8;
+    }
+    .promo {
+        padding: 0;
+        position: relative;
+        &__wrapper {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            
+        }
+       
+    }
+    .about {
+        position: relative;
+        z-index: 3;
+        min-height: 710px;
+        padding-bottom: 20px;
+        &__wrapper {
+            .my-photo {
+                width: 320px;
+                height: 520px;
+                margin-right: 40px;
+            }
+        }
+        &__info {
+           
+            .title {
+                font-size: 28px;
+            }
+            .about__title {
+                margin-top: -55px;
+                left: -30px;
+                font-size: 16px;
+            }
+            
+        }
+        &__skills {
+            margin-top: 15px;
+            grid-template-columns: repeat(1,minmax(360px,360px));
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2,350px);
+            padding: 50px 0 0 0;
+            column-gap: 30px;
+        }
+        &__item {
+            &-body {
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    .skill {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit ,260px);
+            justify-content: center;
+
+        }
+        &__scale {
+            grid-template-columns: repeat(auto-fit ,245px);
+            justify-content: space-around;
+        }
+        &__item {
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    
+    }
+    .portfolio {
+        margin-top: 300px;
+    }
+    .price {
+        .line {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__wrapper {
+            grid-template: repeat(3, 60px)/repeat(auto-fit, 300px);
+            gap: 25px;
+            &-item { 
+                width: 300px;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            display: grid;
+            grid-template-columns: 320px 360px;
+            justify-content: space-between;
+            .contacts__photo {
+                img {
+                    object-fit: cover;
+                    width: 100%;        
+                    height: 100%;      
+                }
+            }
+        }
+        &__subtitle {
+            font-size: 34px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/repeat(2,160px);
+            gap: 40px;
+        }
+        &__btn {
+            line-height: 17px;
+        }
+    }
+    .message {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 570px;
+    }
+    .promo {
+        &__header {
+            margin-top: 25px;
+            width: 300px;
+            line-height: 39px;
+            font-size: 28px;
+        }
+        &__title {
+            margin-left: 10px;
+        }
+
+    }
+    .orbit {
+        top: 20%;
+        opacity: .7;
+        .star {
+            display: none;
+        }
+    }
+    .about {
+        height: auto;
+        padding-top: 25px;
+        &__wrapper {
+            picture {
+                source {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            flex-direction: column;
+            .my-photo {
+                display: block;
+                width: 100%;
+                height: 300px;
+            }
+        }
+        &__info {
+           
+            .title {
+                font-size: 28px;
+            }
+            .about__title {
+                margin-top: 40px;
+                left: 0;
+                font-size: 16px;
+            }
+            
+        }
+        &__skills {
+            padding: 0 15px;
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(1,100%);
+            column-gap: 40px;
+            padding-top: 30px;
+            
+        }
+        &__subtitle {
+            font-size: 28px;
+        }
+        .line {
+            margin-top: 10px;
+        }
+    }
+    .skill {
+        padding-top: 70px;
+        &__scale {
+            margin-top: 70px;
+        }
+        &__subtitle {
+            font-size: 26px;
+            line-height: 35px;
+            margin-top: 20px;
+        }
+    }.portfolio {
+        margin-top: 200px;
+       
+    }
+    .contacts {
+        padding: 0 10px;
+        padding-bottom: 30px;
+        &__photo {
+            display: none;
+        }
+        &__title {
+            margin-top: 40px;
+        }
+        &__wrapper {
+            grid-template-columns: 0.99fr;
+            
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 1fr);
+            gap: 20px;
+        }
+        &__text {
+            margin-top: 40px;
+        }
+        &__triggers {
+            justify-content: center;
+        }
+        
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 8px;
+    }
+    .menu {
+        &__block {
+            width: 280px;
+            padding-left: 20px;
+        }
+    }
+    .humburger {
+        right: 20px;
+    }
+    .promo {
+        &__btns {
+            margin-top: 30px;
+        }
+        .orbit {
+            top: 18%;
+        }
+    }
+    .skill {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit ,255px);
+            justify-content: center;
+            gap: 13px;
+        }
+        &__scale {
+            grid-template-columns: repeat(auto-fit ,255px);
+            justify-content: center;
+        }
+    
+    }
+    .portfolio {
+        margin-top: 485px;
+        &__wrapper {
+            grid-template: repeat(auto-fit, 260px) / repeat(auto-fit, 160px);
+            justify-content: center;
+            gap: 15px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+        &__subtitle {
+            font-size: 26px;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template: repeat(3, 60px)/repeat(auto-fit, 260px);
+            &-item { 
+                width: 260px;
+            }
+            &-title {
+                &:before {
+                    left: -18px;
+                }
+            }
+        }
+    }
+    .contacts {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        &__subtitle {
+            font-size: 25px;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            .contacts__input {
+                height: 45px;
+            }
+            .contacts__textarea {
+                height: 150px;
+            }
+        }
+        &__triggers {
+            display: flex; 
+            flex-direction: column-reverse;
+            align-items: center;
+            margin: 15px 0;
+        }
+        &__policy {
+            span {
+                font-size: 11px;
+            }
+        }
+        &__btn {
+            margin-top: 25px;
+            padding: 0 25px;
+        }
+    }        
+}
+
+@media (max-width: 542px) {
+    .portfolio {
+        margin-top: 1050px;
+    }
+}

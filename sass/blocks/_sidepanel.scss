@@ -1,0 +1,48 @@
+.sidepanel {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    top: 48%;
+    left: -130px;
+    z-index: 3;
+    transform: rotate(-90deg);
+    &__title {
+        cursor: default;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        margin: auto 0;
+        transition: 1.5s all;
+        &:hover {
+            transform: scale(1.1);
+            transition: 1s all;
+        }
+    }
+    &__line {
+        vertical-align: middle;
+        padding: 12.5px 0;
+        width: 70px;
+        height: 25px;
+        transition: 2s all;
+        &:hover {
+            transform: rotate(360deg);
+            transition: 2s all;
+        }
+        &-inner {
+            height: 2px;
+            background-color: #000;
+        }
+    }
+    &__link {
+        width: 23px;
+        height: 23px;
+        transition: .5s all;
+        &:hover {
+            transform: scale(1.4);
+            transition: .3s all;
+            
+        }      
+    }
+}

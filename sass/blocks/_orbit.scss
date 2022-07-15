@@ -1,0 +1,54 @@
+.orbit {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+    border: 1px solid #000;
+    border-radius: 50%;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: spin;
+}
+
+.planet {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 155px;
+    border-radius: 50%;
+    background-color: rgb(0, 163, 250);
+    z-index: 1; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: spin;
+}
+.planet:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: -20px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.star {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(247, 217, 160);
+    z-index: 2;
+}
+
+@keyframes spin { to { transform: rotate(360deg);}}
+

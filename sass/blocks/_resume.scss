@@ -1,0 +1,108 @@
+.resume {
+    padding-top: 10px;
+    &__title {
+        position: relative;
+        padding: 0 auto;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -3.5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    .line {
+        margin: 25px auto 0 auto;
+    }
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            font-size: 20px;
+            line-height: 30px;
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 15px;
+                width: 15px;
+                background: $main-color;
+                border-radius: 50%;
+                top: 50%;
+                left: -7px;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 10px);
+                    top: -16px;
+                    left: 0;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 57px;
+            width: 40px;
+            height: 1px;
+            background-color: #000;
+        }
+        &-head {
+            padding: 40px 0 0 100px;
+        }
+        &-body {
+            font-size: 12px;
+            line-height: 18px;
+            padding-left: 43px;
+            margin-top: 12px;
+            transition: all .6s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .title {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 0;
+        }
+        &-location {
+            margin-top: 5px;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+        &-icon {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            @include before_circle;
+            img {
+                position: absolute;
+                left: 7px;
+                top: 14px;
+            }
+        }
+    }
+}

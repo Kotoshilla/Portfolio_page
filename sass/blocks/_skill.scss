@@ -1,0 +1,90 @@
+.skill {
+    padding-top: 120px;
+    height: 1141px;
+    &__title {
+        position: relative;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -3.5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    .line {
+        margin: 0 auto;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(auto, 270px);
+        grid-auto-rows: 270px 270px;
+        gap: 13px;
+        margin-top: 60px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 30px;
+        border: 1px solid #000;
+        transition: all .5s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__icon {
+        height: 65px;
+        display: flex;
+        align-items: center;
+    }
+    .descr {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+    &__scale {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(auto, 70px);
+        gap: 30px 45px;
+        &-first {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title {
+            position: relative;
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            @include before_circle;
+            &:before {
+                top: -8px;
+                left: -13px;
+            }
+        }
+        &-percent {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &-second {
+            margin-top: 27px;
+            height: 14px;
+            width: 100%;
+            background: #E8E4DE;
+            border-radius: 5px;
+            div {
+                height: 100%;
+                border-radius: 5px;
+                background: $main-color;
+            }
+        }
+    }
+}

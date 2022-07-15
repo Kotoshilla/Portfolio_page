@@ -1,0 +1,27 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    // background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    background: linear-gradient(rgba(108, 124, 183, 0.757) 0%, rgb(223, 225, 252)100%) ;
+    padding-top: 205px;
+    &__btns {
+        position: relative;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        z-index: 3;
+    }
+    &__link {
+        margin: 3px 0;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+      
+    } 
+}
